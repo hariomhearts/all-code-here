@@ -1,3 +1,4 @@
+ #get_con_sum_list
 def get_con_sum_list(int_list):
     con_sum_list = []
     end_index = len(int_list)-1
@@ -5,15 +6,16 @@ def get_con_sum_list(int_list):
         con_sum = int_list[i]+int_list[i+1]
         con_sum_list.append(con_sum)
     return con_sum_list
+   
 
-
+#print_sum_triangle
 def print_sum_triangle(int_list):
     while len(int_list) > 1:
         con_sum_list = get_con_sum_list(int_list)
         print(con_sum_list)
         int_list = con_sum_list
 
-
+#convert_str_to_int
 def convert_str_to_int(str_num_list):
     new_list = []
     for item in str_num_list:
