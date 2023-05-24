@@ -32,5 +32,5 @@ app.get("/movies/", async (req, res) => {
   res.send(movie);
 });
 
-//API 2
+
 
